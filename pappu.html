@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblogging App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #feed {
+            margin-top: 20px;
+        }
+
+        .post {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Microblogging App</h1>
+        <form id="postForm">
+            <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div id="feed">
+            <!-- Posted content will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
