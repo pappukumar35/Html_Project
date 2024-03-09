@@ -1,0 +1,91 @@
+.circular-img {
+        border-radius: 20%;
+        
+    }
+
+
+.formula{ background-color: aqua;}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #result {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+
+  /* image */
+
+  .image {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: 20px; /* Add some space below the image */
+    border: 2px solid #4CAF50; /* Add a border around the image */
+    border-radius: 10px; /* Add rounded corners to the border */
+    padding: 10px; /* Add some padding around the image */
+    box-shadow: 0px 4px 6px rgba(229, 33, 206, 0.706); /* Add a subtle shadow effect */
+}
+
+/* Circular Image */
+.circular-img {
+    border-radius: 50%; /* Make the image circular */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover Effect for Image */
+.image:hover .circular-img {
+    transform: scale(1.05); /* Scale up the image slightly on hover */
+}
