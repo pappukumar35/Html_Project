@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+.clock {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+    </style>
+    <script>
+        function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('time').textContent = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initial update
+updateClock();
+
+    </script>
+    <script>
+        function updateClock() {
+    const now = new Date();
+    const timeElement = document.getElementById('time');
+    const dateElement = document.getElementById('date');
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = now.toLocaleDateString('en-US', options);
+    const formattedTime = now.toLocaleTimeString('en-US');
+
+    timeElement.textContent = formattedTime;
+    dateElement.textContent = formattedDate;
+}
+
+updateClock(); // Initial call
+setInterval(updateClock, 1000); // Update every second
+
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+    <div class="clock">
+        <div class="time" id="time"></div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <img src="clock.png"> -->
+</body>
+</html>
