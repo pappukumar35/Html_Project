@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Project</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-v0MiXieSNpwC0t8obm5AfuoyDUZbZuFclFONtCvYn/G+0Oz+y8V+pKXpZFmfkMk1sKjPFW/z9mEVwnok8TgGgg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- <link rel="stylesheet" href=""> -->
+	<link rel="stylesheet" href="/web_pappu/snack/index.cs		s">
+
+	<link rel="stylesheet" href="web_pappu/style.css">
+	<link rel="stylesheet" href="/web_pappu/command/command/command.css">
+
+
+	<style>
+		/* Add CSS styles here to customize your project */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+
+		/* Header styles */
+		#header {
+			background-color: #1e9322;
+			color: white;
+		}
+
+		#header a {
+			text-decoration: none;
+			color: black;
+		}
+
+		/* Home section styles */
+		#home {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+
+		/* About section styles */
+		#about {
+			background-color: black;
+			color: white;
+		}
+
+		#about img {
+			width: 100%;
+			max-width: 400px;
+			height: auto;
+		}
+
+		/* Projects section styles */
+		#projects {
+			background-color: #c2c0c3;
+			color: black;
+			text-align: center;
+		}
+
+		#projects ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		#projects li {
+			margin: 10px 0;
+		}
+
+		#projects a {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+
+		/* Achievements section styles */
+		#achievements {
+			background-color: black;
+			color: white;
+		}
+
+		#achievements ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		#achievements li {
+			margin: 10px 0;
+		}
+
+		/* Contact section styles */
+		#contact {
+			background-color: #c2c0c3;
+			text-align: center;
+		}
+
+		#contact input[type="text"],
+		#contact input[type="email"],
+		#contact input[type="number"],
+		#contact textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		#contact button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		/* Footer styles */
+		#footer {
+			background-color: #4CAF50;
+			color: white;
+			text-align: center;
+		}
+
+		/* Additional styles can be added as needed */
+	</style>
+
+</head>
+
+<body>
+
+	<!--Header(start)-->
+	<!-- <table border="0" center="left">
+	<tr>
+		<td><img src="PAPPU 2.jpeg" weight="100px" height="250px" style="border-radius: 100%"></td>
+	</tr>
+    </table> -->
+	<table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td>
+
+
+						</td>
+
+
+						<table border="0" center="left">
+							<tr>
+								<td><img src="PAPPU 2.jpeg" weight="50px" height="100px"
+										style="border-radius: 90%"></td>
+							</tr>
+						</table>
+
+
+
+						<td>
+							<font face="Comic sans MS" size="5">
+								<b>PAPPU KUMAR TECHNO</b>
+							</font>
+						</td>
+
+						<td width="15%">
+
+						</td>
+
+						<td>
+							<a href="#home" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Home
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#about" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									About
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#projects" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Projects
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#achievements" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Achievements
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#contact" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Contact
+								</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+
+	<!--Home(start)-->
+	<table id="home" border="1" width="100%" cellpadding="25" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td align="center" valign="middle">
+							<h3>
+								<font face="Times New Roman" size="6" color="#ffffff">
+									Hi Pappu Techno!
+
+									<a href="#later-section"
+										style="position: fixed; bottom: 20px; right: 20px; background-color: #ffffff; padding: 10px; border-radius: 50%; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); z-index: 999;">
+										<i class="fas fa-arrow-down"
+											style="font-size: 24px; color: #333333;"></i>
+
+									</a>
+
+
+
+								</font>
+							</h3>
+
+							<h2>
+								<font face="Verdana" size="6" color="#4CAF50">
+									<!-- Freelance Programmer -->
+								</font>
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Home(end)-->
+
+
+	<!--About(start)-->
+	<table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle" colspan="2">
+							<font face="Verdana" size="7" color="#4CAF50">
+								About Me
+							</font>
+							<hr color="#4CAF50" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td width="50%">
+							<!-- <td>height="250px"</td> -->
+							<img src="ideaphoto.png" weight="100px" height="150">
+						</td>
+
+						<td width="60%">
+							<font face="Verdana" size="4" color="white">
+								Thanks for your interest, here
+								is a quick story of me and this
+								website.
+								<hr color="black">
+								Pappu Kumar studies at Anna University Chennai.
+								He loves to solve programming problems in the
+								most efficient ways.At Pappu Techno, he has
+								worked with online YouTube teaching as a software
+								developer.
+								<hr color="black">
+
+								I do my work mainly in C-Language,
+								and JAVA. Data Structure
+								& Algorithm are my stronger section.
+								Besides these I know Web Development,
+								LINUX and database as well.
+								<hr color="black">
+
+								This website is basically one of my
+								Web Development project which is
+								built using HTML only.
+								Here one can also find ideas for
+								projects in different languages.
+
+								Thanks again for reading this,
+								because of people like you, it
+								exists and prospers!
+								<hr color="black">
+								Cheers,
+								<br>
+								<b>Pappu Techno.</b>
+							</font>
+						</td>
+					</tr>
+				</table>
+				<hr color="black">
+				<hr color="black">
+				<hr color="black">
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+
+	<!--Projects(start)-->
+	<table id="projects" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" text-align="center" valign="middle" colspan="2">
+							<font face="Verdana" size="7" color="black">
+								Projects
+							</font>
+							<hr color="black" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td height="10">
+							<font face="Times New Roman" size="5" color="black">
+								<ul>
+
+
+									<!-- <li>
+										Snake Game
+										<a href="snack" style="text-decoration:none">
+											 ➲
+										</a>
+									</li> -->
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="https://pappukumar35.netlify.app/" style="text-decoration:none">
+
+											Portfolio Website ➲
+										</a>
+									</li>
+
+
+									<li>
+
+										<a href="web_pappu/project_BMI/index.html"
+											style="text-decoration:none">
+											BMI Calculator ➲
+										</a>
+									</li>
+
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/snack/index.html" style="text-decoration:none">
+
+											Snake Game ➲
+										</a>
+									</li>
+
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/command/command/index.html"
+											style="text-decoration:none">
+
+											Command Line Code ➲
+										</a>
+									</li>
+
+
+
+
+
+									<li>
+
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/Calculator/index.html"
+											style="text-decoration:none" color="#c2c0c3">
+											Calculator ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/calender/index.html" style="text-decoration:none">
+											Calendar ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/chatBoot.html" style="text-decoration:none">
+											ChatBot ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/server/server.html" style="text-decoration:none">
+											Contact Saver ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/Quiz project/index.html"
+											style="text-decoration:none">
+											Daily Quiz ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/Emplyoyee Record System/index.html"
+											style="text-decoration:none">
+											Emplyoyee Record System ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/Guess the Number-Game/index.html"
+											style="text-decoration:none">
+											Guess the Number-Game ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/Random PassWord Generator/index.html"
+											style="text-decoration:none">
+											Random Password Generator➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="web_pappu/Stone Paper Scissor/index.html"
+											style="text-decoration:none">
+											Stone Paper Scissor➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="#" style="text-decoration:none">
+											Tic Tac Toe➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="#" style="text-decoration:none">
+											Tic Tac Toe(GUI)➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="#" style="text-decoration:none">
+											ToDo App➲ </a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+
+										<a href="#" style="text-decoration:none"> Travel Management System➲
+										</a>
+									</li>
+								</ul>
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+							</font>
+						</td>
+
+						<td width="59%">
+							<img src="icon.png" alt="Project" width="125%" hight="600">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Projects(end)-->
+
+	<!--Achievement(start)-->
+	<table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle">
+							<font face="Verdana" size="7" color="#4CAF50">
+								Achievements
+								<hr color="#4CAF50" width="100">
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="white">
+								<ul>
+									<li>
+										<b>Intern at Pappu Techno.</b>
+										<ul>
+											<li>
+												September,2023 - Present.
+											</li>
+											<li>
+												Write technical articles
+												on programming related topics.
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<hr color="black">
+										<hr color="black">
+										<hr color="black">
+										<b>Anna University Learn Student.</b>
+										<ul>
+											<li>
+												July,2021 - Present.
+											</li>
+											<li>
+												Conducted events
+												different technologies.
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<hr color="black">
+										<hr color="black">
+										<hr color="black">
+										<b>mentored LeetCode.</b>
+										<ul>
+											<li>
+												Auguest,2023.
+											</li>
+											<li>
+												Selected from leetcode as project Student
+												where I mentored students
+												in their projects.
+											</li>
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+										</ul>
+									</li>
+
+								</ul>
+
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<!-- <tr>
+			<td width="150%" align="right">
+				<img src="pk.jpg" width="250px" height="480">
+			 </td> -->
+
+
+
+
+
+
+
+	</table>
+	<!--Achievement(end)-->
+
+
+	<!--Contact(start)-->
+	<table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle" colspan="2">
+							<font face="Verdana" size="7" color="black">Contact</font>
+							<hr color="black" width="90">
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<form method="post" action="submit_form.php">
+								<table border="0" width="50%" cellpadding="15" cellspacing="0" align="center"
+									bgcolor="black">
+									<tr>
+										<td width="30%">
+											<hr color="black">
+											<font face="Verdana" size="4" color="#ffffff">Name</font>
+										</td>
+										<td width="70%">
+											<font face="Verdana" size="4" color="#ffffff">
+												<input type="text" name="name" size="40">
+											</font>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%">
+											<font face="Verdana" size="4" color="#ffffff">Email</font>
+										</td>
+										<td width="70%">
+											<font face="Verdana" size="4" color="#ffffff">
+												<input type="email" name="email" size="40">
+											</font>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%">
+											<font face="Verdana" size="4" color="#ffffff">Number</font>
+										</td>
+										<td width="70%">
+											<font face="Verdana" size="4" color="#ffffff">
+												<input type="number" name="number" size="12">
+											</font>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%">
+											<font face="Verdana" size="4" color="#ffffff">Message</font>
+										</td>
+										<td width="70%">
+											<font face="Verdana" size="4" color="#ffffff">
+												<textarea name="message" rows="5" cols="37"></textarea>
+											</font>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%"></td>
+										<td width="70%">
+											<button type="submit">
+												<font face="Verdana" size="4" color="black"><b>Submit</b>
+												</font>
+											</button>
+											<hr color="black">
+											<hr color="black">
+										</td>
+									</tr>
+								</table>
+							</form>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<!--Contact(end)-->
+
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="13%" valign="top">
+							<b>LinkedIn</b>
+							<a
+								href="https://www.linkedin.com/in/pappu-kumar-961529265?utm_source=share&utm_campaingn=profile&utm_medium=android_app"></a>
+							<a href="https://www.linkedin.com/in/pappu-kumar-961529265?utm_source=share&utm_campaingn=profile&utm_medium=android_app"
+								style="text-decoration:none">
+								➲
+							</a>
+						</td>
+						<td>
+							|
+
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Youtub</b>
+							<a href="https://youtube.com/@TPG_coder?si=6Ns4Sc9RnjtMv0ni"></a>
+							<a href="https://youtube.com/@TPG_coder?si=6Ns4Sc9RnjtMv0ni"
+								style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+
+
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>LeetCode</b>
+							<a href="https://leetcode.com/pappukumar35/"></a>
+							<a href="https://leetcode.com/pappukumar35/" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+						<td>
+							|
+						</td>
+
+
+
+						<td width="13%" valign="top">
+							<b>GitHub</b>
+							<a href="https://github.com/pappukumar35"></a>
+							<a href="https://github.com/pappukumar35" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>GeekForGeek</b>
+							<a href="https://auth.geeksforgeeks.org/user/pappukumar35 "></a>
+							<a href="https://auth.geeksforgeeks.org/user/pappukumar35 "
+								style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>PAPPU TECHNO.</b>
+							<a href="https://linktr.ee/pappukumar35"></a>
+							<a href="https://linktr.ee/pappukumar35" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Twitter</b>
+							<a href="https://x.com/Pappukr8862"></a>
+							<a href="https://x.com/Pappukr8862" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Instagram</b>
+							<a href="https://instagram.com/itspappu779"></a>
+							<a href="https://instagram.com/itspappu779" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Email</b>
+							<a href="mailto:9262882257.pk@gmail.com"></a>
+							<a href="mailto:9262882257.pk@gmail.com" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+
+
+						<td width="13%" valign="top">
+							<b>Website</b>
+							<a href="https://pappuportfolioid.netlify.app"></a>
+							<a href="https://pappuportfolioid.netlify.app" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer1(end)-->
+
+
+	<!--Footer2(start)-->
+	<table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="80%" valign="top">
+							<font face="Verdana" color="#4CAF50" size="5">
+								@papputechno.com
+							</font>
+						</td>
+
+						<td width="10%">
+							<font face="arial" color="black" size="5">
+								<a href="#header" style="text-decoration:none">
+									<font face="Verdana" color="#4CAF50" size="6">
+										<b>TOP</b>
+									</font>
+								</a>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer2(end)-->
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+/* Body Styling */
+body {
+     font-family: Arial, sans-serif; /* Set a fallback font family */
+     line-height: 1.6; /* Improve readability by setting the line height */
+     margin: 0; /* Remove default margin */
+     padding: 20px; /* Add padding to the body */
+     background-color: #f4f4f4; /* Set a light background color */
+ }
+ 
+ /* Headings Styling */
+ h1, h2 {
+     color: #333; /* Set heading text color */
+     margin-top: 20px; /* Add space above headings */
+     margin-bottom: 10px; /* Add space below headings */
+ }
+ 
+ /* Horizontal Rule Styling */
+ hr {
+     border: none; /* Remove default border */
+     height: 1px; /* Set the height of the line */
+     background-color: #ccc; /* Set line color */
+     margin: 10px 0; /* Add space above and below the line */
+ }
+ 
+ /* Paragraph Styling */
+ p {
+     color: #666; /* Set paragraph text color */
+     margin-top: 5px; /* Add space above paragraphs */
+     margin-bottom: 5px; /* Add space below paragraphs */
+ }
+ 
+ /* Unordered List Styling */
+ ul {
+     list-style-type: none; /* Remove default bullet points */
+     padding: 0; /* Remove default padding */
+ }
+ 
+ /* List Item Styling */
+ ul li {
+     margin-bottom: 5px; /* Add space below list items */
+ }
+ 
+ /* Link Styling */
+ a {
+     text-decoration: none; /* Remove default underline */
+     color: #007bff; /* Set link color */
+ }
+ 
+ a:hover {
+     text-decoration: underline; /* Add underline on hover */
+ }
+ 
+ /* Code Styling */
+ code {
+     background-color: #f8f9fa; /* Set code background color */
+     padding: 2px 4px; /* Add padding to the code */
+     border-radius: 4px; /* Add rounded corners */
+ }
+ 
+ /* Container Styling */
+ .container {
+     max-width: 800px; /* Set maximum width for the container */
+     margin: 0 auto; /* Center the container horizontally */
+     padding: 20px; /* Add padding to the container */
+     background-color: #fff; /* Set container background color */
+     border-radius: 8px; /* Add rounded corners to the container */
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+ }
+ 

@@ -1,0 +1,85 @@
+/* style.css */
+@import url( 
+"https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"); 
+
+body { 
+	background-color: #f8f8f8; 
+	color: #333; 
+	font-family: "Roboto Mono", monospace; 
+} 
+
+.generator { 
+	background-color: #f5f5f5; 
+	width: 250px; 
+	margin: 150px auto; 
+	padding: 20px; 
+	border-radius: 10px; 
+} 
+
+div.password { 
+	display: grid; 
+	grid-template-columns: auto min-content; 
+	border-radius: 10px; 
+	overflow: hidden; 
+} 
+
+div.password input { 
+	padding: 7px 10px; 
+	background-color: #ddd; 
+	border: 0; 
+	color: #333; 
+} 
+
+button { 
+	background-color: #4caf50; 
+	color: #fff; 
+	text-transform: uppercase; 
+	padding: 5px 15px; 
+	border: 0; 
+	border-radius: 10px; 
+} 
+
+div.password button { 
+	border-radius: 0; 
+} 
+
+div.range { 
+	margin: 10px 0; 
+	display: grid; 
+	grid-template-columns: 1fr min-content; 
+} 
+
+div.range span { 
+	background-color: #ddd; 
+	padding: 10px; 
+	margin-left: 20px; 
+	min-width: 30px; 
+	text-align: center; 
+	border-radius: 10px; 
+} 
+
+div.options { 
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	gap: 10px; 
+} 
+
+div.options label { 
+	display: block; 
+	background-color: #ddd; 
+	padding: 10px; 
+	border-radius: 10px; 
+	cursor: pointer; 
+	font-family: sans-serif; 
+} 
+
+button.generate { 
+	width: 100%; 
+	margin-top: 10px; 
+	padding: 10px; 
+} 
+
+h1 { 
+	text-align: center; 
+	color: #4caf50; 
+}

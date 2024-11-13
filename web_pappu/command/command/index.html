@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Commands Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .command-section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .command {
+            font-family: monospace;
+            background-color: #e9e9e9;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .copy-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Commands Guide</h1>
+
+        <div class="command-section">
+            <h2>Basic Commands</h2>
+            <p><span class="command">git version</span><button class="copy-btn" onclick="copyToClipboard('git version')">Copy</button></p>
+            <p><span class="command">git help</span><button class="copy-btn" onclick="copyToClipboard('git help')">Copy</button></p>
+            <p><span class="command">git config</span><button class="copy-btn" onclick="copyToClipboard('git config')">Copy</button></p>
+            <p><span class="command">git init</span><button class="copy-btn" onclick="copyToClipboard('git init')">Copy</button></p>
+            <p><span class="command">git clone</span><button class="copy-btn" onclick="copyToClipboard('git clone')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>Working with Files</h2>
+            <p><span class="command">git add .</span><button class="copy-btn" onclick="copyToClipboard('git add .')">Copy</button></p>
+            <p><span class="command">git status</span><button class="copy-btn" onclick="copyToClipboard('git status')">Copy</button></p>
+            <p><span class="command">git rm</span><button class="copy-btn" onclick="copyToClipboard('git rm')">Copy</button></p>
+            <p><span class="command">git restore</span><button class="copy-btn" onclick="copyToClipboard('git restore')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>Committing Changes</h2>
+            <p><span class="command">git commit -m "Your message"</span><button class="copy-btn" onclick="copyToClipboard('git commit -m &quot;Your message&quot;')">Copy</button></p>
+            <p><span class="command">git log</span><button class="copy-btn" onclick="copyToClipboard('git log')">Copy</button></p>
+            <p><span class="command">git show</span><button class="copy-btn" onclick="copyToClipboard('git show')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>Remote Operations</h2>
+            <p><span class="command">git push</span><button class="copy-btn" onclick="copyToClipboard('git push')">Copy</button></p>
+            <p><span class="command">git pull</span><button class="copy-btn" onclick="copyToClipboard('git pull')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>Branching</h2>
+            <p><span class="command">git branch</span><button class="copy-btn" onclick="copyToClipboard('git branch')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>User Configuration</h2>
+            <p><span class="command">git config --list --show-origin</span><button class="copy-btn" onclick="copyToClipboard('git config --list --show-origin')">Copy</button></p>
+            <p><span class="command">git config --global user.name "Your Name"</span><button class="copy-btn" onclick="copyToClipboard('git config --global user.name &quot;Your Name&quot;')">Copy</button></p>
+            <p><span class="command">git config --global user.email "your.email@example.com"</span><button class="copy-btn" onclick="copyToClipboard('git config --global user.email &quot;your.email@example.com&quot;')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>Workflow Commands</h2>
+            <p><span class="command">pwd</span><button class="copy-btn" onclick="copyToClipboard('pwd')">Copy</button></p>
+            <p><span class="command">cd e:</span><button class="copy-btn" onclick="copyToClipboard('cd e:')">Copy</button></p>
+            <p><span class="command">cd folder_name</span><button class="copy-btn" onclick="copyToClipboard('cd folder_name')">Copy</button></p>
+            <p><span class="command">git rm --cached file.name</span><button class="copy-btn" onclick="copyToClipboard('git rm --cached file.name')">Copy</button></p>
+        </div>
+
+        <div class="command-section">
+            <h2>Advanced Git Operations</h2>
+            <p><span class="command">git clone [repository_url]</span><button class="copy-btn" onclick="copyToClipboard('git clone [repository_url]')">Copy</button></p>
+            <p><span class="command">git push -u origin [branch_name]</span><button class="copy-btn" onclick="copyToClipboard('git push -u origin [branch_name]')">Copy</button></p>
+            <p><span class="command">git branch [new_branch_name]</span><button class="copy-btn" onclick="copyToClipboard('git branch [new_branch_name]')">Copy</button></p>
+            <p><span class="command">git checkout [branch_name]</span><button class="copy-btn" onclick="copyToClipboard('git checkout [branch_name]')">Copy</button></p>
+            <p><span class="command">git merge [branch_name]</span><button class="copy-btn" onclick="copyToClipboard('git merge [branch_name]')">Copy</button></p>
+            <p><span class="command">git log --oneline</span><button class="copy-btn" onclick="copyToClipboard('git log --oneline')">Copy</button></p>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied to clipboard: ' + text);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
